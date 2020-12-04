@@ -3,6 +3,14 @@
  padding: 0;
  box-sizing: border-box;
 }
+body{
+    background-image: url(box.gif), url(bck2.gif);
+    background-repeat: no-repeat;
+    background-size: 50%, 100%;
+    background-position: center center;
+    margin-bottom: 50px;
+
+}
 
 .wrap {
  width: 80%;
@@ -16,6 +24,9 @@ h1 {
  text-align: center;
  text-transform: uppercase;
  margin-bottom: 30px;
+ color: #ff7011;
+ background-color: #ffd311;
+ font-weight: 900;
 }
 .game {
  display: flex;
@@ -56,17 +67,38 @@ border: 3px solid gray;
 }
 
 .panel {
- margin: 80px 0 40px;
+ margin: 0px 0 40px;
  font-size: 26px;
 }
-
+.interface{
+    margin-top: 80px;
+    /* border: 2px solid black; */
+    box-shadow: inset -12px -8px 40px #464646;
+    border-radius: 1%;
+    /* background-color: aqua; */
+    background-image: linear-gradient(rgb(153, 158, 218), rgb(30, 255, 0));
+    background-position-y: center;
+}
 .panel, .score {
  font-size: 26px;
+ text-align: center;
 }
 .panel span, .score span {
  font-weight: bold;
 }
-
+.wallet, .number{
+    color: #ffd311;
+    font-size: 34px;
+}
+.win{
+    color: rgb(19, 47, 141);
+    font-size: 34px;
+}
+.loss{
+    color: rgb(141, 19, 19);
+    font-size: 34px;
+}
+    
 @media (max-width: 1024px) {
  .wrap {
  width: 90%;
