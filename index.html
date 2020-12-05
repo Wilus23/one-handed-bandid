@@ -11,8 +11,12 @@
 
 <body>
     <!-- Music START-->
-    <div id="player" style="display: none;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qGyPuey-1Jw?controls=0&amp;start=3" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    <div id="player" >
+        <audio id="audio">
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+        <button id="playPauseBTN" onclick="playPause()">Play Music &#9658</button>
+        <button onclick="stop()">Stop &#9611</button>
     </div>
     <!-- Music END -->
   <div class="wrap">
@@ -38,14 +42,7 @@
     </section>
   </section>
 
-  </div>
-  <script src="Wallet.js"></script>
-  <script src="Statistics.js"></script>
-  <script src="Draw.js"></script>
-  <script src="Result.js"></script>
-  <script src="Game.js"></script>
-  <script src="main.js"></script>
-  <script>
+  <!-- <script>
     // 2. This code loads the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
   
@@ -79,14 +76,23 @@
     var done = false;
     function onPlayerStateChange(event) {
       if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 239000);
+        setTimeout(stopVideo, 239000);  
         done = true;
       }
     }
     function stopVideo() {
       player.stopVideo();
     }
-  </script>
+  </script> -->
+
+  </div>
+  <script src="Wallet.js"></script>
+  <script src="Statistics.js"></script>
+  <script src="Draw.js"></script>
+  <script src="Result.js"></script>
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+ 
 </body>
 
 </html>
